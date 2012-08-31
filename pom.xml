@@ -182,14 +182,14 @@
                         <version>${cobertura.version}</version>
                         <configuration>
                             <formats>
-                                <format>html</format>
                                 <format>xml</format>
+                                <format>html</format>
                             </formats>
                         </configuration>
                         <executions>
                             <execution>
+								<phase>clean</phase>
                                 <goals>
-                                    <goal>clean</goal>
                                     <goal>check</goal>
                                 </goals>
                             </execution>
@@ -391,8 +391,8 @@
                         <version>${cobertura.version}</version>
                         <configuration>
                             <formats>
-                                <!--<format>html</format>-->
                                 <format>xml</format>
+                                <format>html</format>
                             </formats>
                         </configuration>
                     </plugin>
